@@ -1,0 +1,21 @@
+/* [M2S02] Ex 2 - Estilizando a Página Web */
+
+title{
+    color: blue;
+    font-size: 20px;
+    font-family: Arial;
+    margin-bottom: 10px;
+}
+
+p{
+    color: red;
+    font-size: 15px;
+    font-family: Arial;
+    margin-bottom: 10px;
+}
+
+ul{
+    color: green;
+    font-size: 12px;
+    font-family: Arial;
+}
