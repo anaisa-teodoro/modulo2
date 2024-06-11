@@ -1,15 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <!--[M2S03] Ex.1 - Criar uma página de perfil pessoal utilizando as principais tags HTML-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Semana 03 FuturoDev">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Anaísa Mayara Teodoro">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[M2S03] Ex.1 - Criar uma página de perfil pessoal utilizando as principais tags HTML-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Semana 03 FuturoDev" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Anaísa Mayara Teodoro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Exercício 01</title>
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="nav-container">
+      <nav class="nav-main">
+        <a
+          class="nav-brand"
+          href="https://floripamaistec.pmf.sc.gov.br/cursos/"
+          target="_blank"
+          >Estudante do Curso FuturoDEV</a
+        >
+        <ul class="menu-items">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="profile-container">
+        <div class="profile-avatar">
+          <img src="./img/profile.jpg" alt="Meu perfil" />
+        </div>
+        <h1 class="profile-title">Anaísa Mayara Teodoro</h1>
+        <p class="profile-description">Fullstack - Node - React</p>
+      </section>
+
+      <section id="sobre">
+        <h2 class="sobre-title">Sobre</h2>
+
+        <div class="sobre-container">
+          <p>
+            Sou estudante fullstack, dedicada e comprometida com meu
+            desenvolvimento. Procuro uma oportunidade para aplicar o que aprendi
+            e expandir meus conhecimentos, contribuindo para projetos e equipes
+            de forma significativa. Acredito que a prática é essencial para
+            consolidar habilidades e estou pronta para enfrentar desafios e
+            crescer profissionalmente.
+          </p>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2 class="portfolio-title">Portfolio</h2>
+
+        <div class="portfolio-container">
+          <a href="https://github.com/anaisa-teodoro/modulo1" target="_blank">
+            <img
+              class="portfolio-item"
+              src="./img/portfolio1.png"
+              alt="Portfolio 1"
+            />
+          </a>
+          <a href="https://github.com/anaisa-teodoro/modulo2" target="_blank">
+            <img
+              class="portfolio-item"
+              src="./img/portfolio2.png"
+              alt="Portfolio 2"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-title">Siga-me!</div>
+      <div class="social-container">
+        <a
+          href="https://www.linkedin.com/in/anaisa-mayara-teodoro"
+          target="_blank"
+          ><img src="./img/linkedin.png" alt="Linkedin"
+        /></a>
+        <a href="https://github.com/anaisa-teodoro" target="_blank"
+          ><img src="./img/github_git_logo_social_icon.png" alt="Github"
+        /></a>
+      </div>
+    </footer>
+  </body>
 </html>
