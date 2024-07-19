@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Yan",
+            "email": "yan.m.esteves@gmail.com"
+        },
+        {
+            "id": 2,
+            "name": "João",
+            "email": "joao.coelho@gmail.com"
+        }
+    ],
+    "bicicletas": [
+        {
+            "id": 1,
+            "model": "Nimbus"
+        }
+    ]
+}

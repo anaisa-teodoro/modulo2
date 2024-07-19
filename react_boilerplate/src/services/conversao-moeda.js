@@ -1,0 +1,3 @@
+function converteBRL_USD() {
+    
+}
