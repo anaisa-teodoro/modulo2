@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!--[M2S04] -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Semana 03 FuturoDev" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Anaísa Mayara Teodoro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 04</title>
+    <link rel="stylesheet" href="/semana04/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--Ex3: Adicionar atributo de eventos no menu da aplicação, informar 'página em construção' ao clicar em cada item -->
+      <div class="menu">
+        <ul type="none">
+          <li>
+            <a aria-label="ir para sobre" onclick="page()">Sobre</a>
+          </li>
+          <li>
+            <a aria-label="ir para trailer" onclick="page()">Trailer</a>
+          </li>
+          <li>
+            <a href="https://netflix.com">
+              <img src="./assets/logo.png" alt="logo netflix" />
+            </a>
+          </li>
+          <li>
+            <a aria-label="ir para atores" onclick="page()">Atores</a>
+          </li>
+          <li>
+            <a aria-label="ir para avaliações" onclick="page()">Avaliações</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- EX2: Adicionar atributos de eventos na área de compartilhamento em redes sociais -->
+      <div class="redes-sociais">
+        <a aria-label="acessar instagram" href="https://instagram.com/">
+          <img src="./assets/instagram.png" alt="logo instagram" />
+        </a>
+        <a aria-label="acessar facebook" href="https://facebook.com/">
+          <img src="./assets/facebook.png" alt="logo facebook" />
+        </a>
+        <a aria-label="acessar x" href="https://x.com/">
+          <img src="./assets/twitter.png" alt="logo da rede social x" />
+        </a>
+      </div>
+
+      <div class="elements-serie">
+        <div class="info_serie">
+          <h4 class="titulo">Supernatural</h4>
+          <h6 class="genero">Drama, Mistério, Terror</h6>
+          <span class="descricao"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id
+            lectus id mauris porttitor rutrum sit amet vel augue. Nam varius
+            efficitur sem eu varius. Donec ut diam est. Proin venenatis sodales
+            lorem fermentum tempus. Nulla lobortis suscipit neque. Ler
+            mais.</span
+          >
+
+          <div class="info-serie-row">
+            <span>1ª Temporada </span>
+            <a href="" aria-label="ir para o proximo episodio">
+              <img src="assets/chevron-left.png" alt="seta-esquerda" />
+              <img src="./assets/chevron-right.png" alt="seta-direita" />
+            </a>
+          </div>
+
+          <!-- Ex: 04 Adicionar onclick nos cards dos episódios e identificar no javascript qual episódio foi clicado -->
+          <div class="episodios" id="lista-episodios">
+            <!-- <div class="card-episodio" onclick="assistir()">
+                        <span>T1:01</span>
+                        <span>25min</span>
+                        <img class="img-card" src="./assets/sam-dean.jpg" alt="">
+                    </div> -->
+          </div>
+        </div>
+
+        <img
+          class="poster"
+          src="./assets/poster.png"
+          alt="poster-supernatural"
+        />
+      </div>
+
+      <div class="info">
+        <p class="info-text">2005 | 1 Temporada | IMDB 9.5</p>
+      </div>
+    </div>
+
+    <script>
+      // Ex: 05 Passar HTML do card do episódio para ser tratado via JS
+      const lista_episodios = document.getElementById("lista-episodios");
+
+      const episodios = [
+        {
+          id: 1,
+          episodio: "T1:01",
+          tempo: "25min",
+        },
+        {
+          id: 2,
+          episodio: "T1:02",
+          tempo: "26min",
+        },
+        {
+          id: 3,
+          episodio: "T1:03",
+          tempo: "22min",
+        },
+      ];
+
+      //Ex:06 Utilizar um método de repetição no JS para ser renderizado os cards no HTML (usar innerHTML)
+      episodios.forEach((episodio) => {
+        const card_episodio = document.createElement("div");
+        card_episodio.className = "card-episodio";
+
+        card_episodio.innerHTML = `
+            <span>${episodio.episodio}</span>
+            <span>${episodio.tempo}</span>
+            <button onclick="assistirEp(${episodio.id})">Play</button>
+            <img src='./assets/sam-dean.jpg'/ >
+            
+        `;
+
+        lista_episodios.appendChild(card_episodio);
+      });
+
+      function assistirEp(id) {
+        alert(`Clicou para assistir episódio: ${id}`);
+      }
+
+      //    ex:04 Adicionar onclick nos cards dos episódios e identificar no javascript qual episódio foi clicado
+      function assistir() {
+        window.open(
+          "https://www.youtube.com/watch?v=RtHDnS8Wix4&pp=ygUMc3VwZXJuYXR1cmFs"
+        );
+      }
+
+      function page() {
+        window.open("./page.html");
+      }
+    </script>
+  </body>
+</html>

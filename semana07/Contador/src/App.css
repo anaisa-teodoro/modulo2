@@ -1,0 +1,72 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;  
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: start;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.botao-custom:active {
+  transform: scale(1);
+}
+
+.m-t-2em {
+  margin-top: 2em;
+}
+
+.card-container {  
+  background-color: #d6d6d6;   
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px gray;
+  margin: 10px;   
+}
+
+input {
+  padding: 10px;
+  background-color: #242424;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.color-dgray {
+  color: #242424;
+}
+
+.container-lateral {
+  height: 400px;
+  width: 400px;
+  padding: 10px;  
+}
+
+.btn-input {
+  font-size: 12px;    
+  width: 100px;
+  margin: 10px;
+}
+
+.card {
+  padding: 2em;
+  gap: 50px;
+  align-items: center;
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.menu ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-end;
+   list-style-type: none; /*tira as bolinhas da lista*/
+   padding: 2em 25vw;
+   font-family: Inter;
+   font-size: 14px;
+   font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li{
+    cursor: pointer;
+}
+
+.redes-sociais {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 144px;
+    right: 30px;
+    top: 290px;
+}
+
+.elements-serie {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 40px;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.info_serie {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+}
+
+.titulo {
+    font-size: 18px;
+}
+.genero {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+.descricao {
+    margin-top: 26px;
+}
+
+.info-serie-row {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.episodios {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row ;
+    gap: 10px;
+    
+}
+
+.card-episodio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 10px;
+    width: 240px;
+    height: 140px;
+    cursor: pointer;
+    
+}
+
+.card-episodio img{
+    width: 240px;
+    height: 140px;
+}
+
+.poster {
+    width: 23%;
+    
+}
+
+.info { 
+    display: block;
+    padding: 15px;
+    font-weight: 300;
+    font-size: 14px;
+}
+.info-text {
+    text-align: end;
+}
+
+button {
+    cursor: pointer;
+    opacity: 0.5;
+    color: red;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    justify-content: center;
+}

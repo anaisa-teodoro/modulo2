@@ -1,0 +1,39 @@
+.header-container {
+    display: flex;    
+    width: 100%;
+    align-items: center;
+    padding-right: 60px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    padding-left: 60px;
+    background-color: #1A1A1A;
+    position: absolute;     
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+    z-index: 1;  
+}
+
+.btn-entrar-inicio {
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    font-size: 14px;
+    font-family: Roboto;    
+    text-transform: uppercase;
+    padding: 0px;
+    width: 150px;
+    height: 48px;
+    align-self: center;
+    color: #222;
+    border-color: #FFCC00;
+    background-color: #FFCC00;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: rgb(252, 210, 74);
+  }
+
+  img {
+    width: 120px;
+  }

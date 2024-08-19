@@ -1,0 +1,23 @@
+.card-container {
+    display: flex;
+    flex-direction: column;        
+    align-items: center;        
+}
+
+.card {
+    width: 170px;
+    height: 80px;
+    background-color: rgb(193, 196, 193);
+    border-radius: 12px;    
+    margin-top: 20px;
+    cursor: pointer;      
+}
+
+.imagem-produto {   
+    height: 80px;
+    width: 90px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;    
+}

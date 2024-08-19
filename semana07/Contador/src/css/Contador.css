@@ -1,0 +1,19 @@
+.card {
+    padding: 2em;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .menos {
+    background-color: #D83A56;
+  }
+
+  .mais {
+    background-color: #1FAB89;
+  }
+  
+  span {
+    color: rgb(170, 41, 41);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+  }
